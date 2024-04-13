@@ -73,6 +73,8 @@ nav {
   }
 }
 
+/********** Reservez ***********/
+
 .up {
   background: #fafafa;
   padding: 0 20px 60px 20px;
@@ -102,9 +104,7 @@ nav {
   @include btn();
 }
 
-.step, .step-content {
-  @include center();
-}
+/********** Fonctionnement **********/
 
 .fonctionnement{
   padding: 20px;
@@ -112,6 +112,7 @@ nav {
 
 .step {
   margin-bottom: 20px;
+  @include center();
   .number{
     width: 30px;
     height: 30px;
@@ -125,9 +126,10 @@ nav {
     color: white;
   }
   .step-content {
+    @include center();
     border-radius: 15px;
     background-color: #F6F6F6;
-    padding: 5px 20px 5px 15px;
+    padding: 5px 15px;
     box-shadow: 0 5px 10px #c1c1c184;
     i {
       color: #7E7E7E;
@@ -139,3 +141,85 @@ nav {
     }
   }
 }
+
+/********** Restaurants **********/
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 25px 15px 25px 15px;
+  .restaurants-cards{
+    @include center();
+    flex-direction: column;
+    .card {
+      width: 340px;
+      height: 251px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 20px;
+      .card-img {
+        width: 100%;
+        height: 175px;
+        object-fit: cover;
+      }
+      .card-subtitle {
+        margin: 5px;
+      }
+    }
+  }
+}
+
+.card-content {
+  padding: 5px 10px 10px 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  margin: 5px;
+}
+
+.card-new {
+  background-color: #99E2D0;
+  color: #008766;
+  font-weight: 500;
+  padding: 5px 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 2px;
+}
+
+.card-like {
+  padding: 5px;
+}
+
+/********** Footer **********/
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px 20px 5px 20px;
+  display: flex;
+  flex-direction: column;
+  .footer-title {
+    h4 {
+      margin: 0;
+      font-weight: lighter;
+    }
+    }
+  .footer-links {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 5px;
+      i {
+        width: 15px;
+        margin-right: 10px;
+      }
+    }
+    }}
