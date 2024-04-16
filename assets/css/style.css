@@ -86,6 +86,12 @@ nav {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to top left, #a16be0, #ff93e1);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
 }
 
 /********** Fonctionnement **********/
