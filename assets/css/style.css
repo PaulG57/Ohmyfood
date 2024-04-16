@@ -50,6 +50,7 @@ nav {
   margin-left: 20px;
 }
 
+/********** Reservez ***********/
 .up {
   background: #fafafa;
   padding: 0 20px 60px 20px;
@@ -85,20 +86,24 @@ nav {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.step, .step-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.btn:hover {
+  background-image: linear-gradient(to top left, #a16be0, #ff93e1);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
 }
 
+/********** Fonctionnement **********/
 .fonctionnement {
   padding: 20px;
 }
 
 .step {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .step .number {
   width: 30px;
@@ -113,9 +118,12 @@ nav {
   color: white;
 }
 .step .step-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 15px;
   background-color: #F6F6F6;
-  padding: 5px 20px 5px 15px;
+  padding: 5px 15px;
   box-shadow: 0 5px 10px rgba(193, 193, 193, 0.5176470588);
 }
 .step .step-content i {
@@ -125,6 +133,85 @@ nav {
 }
 .step .step-content h4 {
   width: 211px;
+}
+
+/********** Restaurants **********/
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 25px 15px 25px 15px;
+}
+.restaurants .restaurants-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.restaurants .restaurants-cards .card {
+  width: 340px;
+  height: 251px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+.restaurants .restaurants-cards .card .card-img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+}
+.restaurants .restaurants-cards .card .card-subtitle {
+  margin: 5px;
+}
+
+.card-content {
+  padding: 5px 10px 10px 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  margin: 5px;
+}
+
+.card-new {
+  background-color: #99E2D0;
+  color: #008766;
+  font-weight: 500;
+  padding: 5px 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 2px;
+}
+
+.card-like {
+  padding: 5px;
+}
+
+/********** Footer **********/
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px 20px 5px 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-title h4 {
+  margin: 0;
+  font-weight: lighter;
+}
+footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-links li {
+  margin-bottom: 5px;
+}
+footer .footer-links li i {
+  width: 15px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
