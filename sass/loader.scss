@@ -1,0 +1,29 @@
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    animation: loader-animation 2s ease-in-out forwards;
+    @include center();
+  }
+  
+  .loader-content {
+    border: 15px dashed $primary-color;
+    border-top: 15px solid $second-color;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  @keyframes loader-animation {
+    0% { 
+      transform: rotate(0deg); 
+    }
+    100% { 
+      transform: rotate(360deg);
+      display: none; 
+    }
+  }
+  
+  

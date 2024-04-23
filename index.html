@@ -12,7 +12,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Ohmyfood</title>
 </head>
+
 <body>
+
+    <div class="loader">
+        <div class="loader-content"></div>
+    </div>
+    
     <header>
         <nav>
             <div class="nav-title">
@@ -37,86 +43,96 @@
             </div>
         </section>
         <section class="fonctionnement">
-            <div class="title2">
-                <h1>Fonctionnement</h1>
-            </div>
-            <div class="step">
-                <div class="number">1</div>
-                <div class="step-content">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h4>Choisissez un restaurant</h4>
+            <div class="container">
+                <div class="title2">
+                    <h1>Fonctionnement</h1>
                 </div>
-            </div>
-            <div class="step">
-                <div class="number">2</div>
-                <div class="step-content">
-                    <i class="fa-solid fa-list-ul"></i>
-                    <h4>Composez votre menu</h4>
-                </div>
-            </div>
-            <div class="step">
-                <div class="number">3</div>
-                <div class="step-content">
-                    <i class="fa-solid fa-store"></i>
-                    <h4>Dégustez au restaurant</h4>
+                <div class="steps">
+                    <div class="step">
+                        <div class="number">1</div>
+                        <div class="step-content">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h4>Choisissez un restaurant</h4>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="number">2</div>
+                        <div class="step-content">
+                            <i class="fa-solid fa-list-ul"></i>
+                            <h4>Composez votre menu</h4>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="number">3</div>
+                        <div class="step-content">
+                            <i class="fa-solid fa-store"></i>
+                            <h4>Dégustez au restaurant</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="restaurants">
-            <div class="title2">
-                <h1>Restaurants</h1>
-            </div>
-            <div class="restaurants-cards">
-                <a href="#" class="card">
-                    <span class="card-new">Nouveau</span>
-                    <img src="assets/images/restaurants/Menilmontant.jpg" alt="Image de la carte" class="card-img">
-                    <div class="card-content">
-                        <div class="card-txt">
-                            <h3 class="card-title">La palette du goût</h3>
-                            <p class="card-subtitle">Ménilmontant</p>
+            <div class="container">
+                <div class="title2">
+                    <h1>Restaurants</h1>
+                </div>
+                <div class="restaurants-cards">
+                    <a class="card">
+                        <span class="card-new">Nouveau</span>
+                        <img src="assets/images/restaurants/Menilmontant.jpg" alt="Image de la carte" class="card-img">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">La palette du goût</h3>
+                                <p class="card-subtitle">Ménilmontant</p>
+                            </div>
+                            <div class="card-like">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-solid fa-heart fa-xl"></i>
+                            </div>
                         </div>
-                        <div class="card-like">
-                            <i class="fa-solid fa-heart fa-xl"></i>
+                    </a>
+                    <a href="#" class="card">
+                        <span class="card-new">Nouveau</span>
+                        <img src="assets/images/restaurants/Charonne.jpg" alt="Image de la carte" class="card-img">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">La note enchantée</h3>
+                                <p class="card-subtitle">Charonne</p>
+                            </div>
+                            <div class="card-like">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-solid fa-heart fa-xl"></i>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="card">
-                    <span class="card-new">Nouveau</span>
-                    <img src="assets/images/restaurants/Charonne.jpg" alt="Image de la carte" class="card-img">
-                    <div class="card-content">
-                        <div class="card-txt">
-                            <h3 class="card-title">La note enchantée</h3>
-                            <p class="card-subtitle">Charonne</p>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="assets/images/restaurants/Cite Rouge.jpg" alt="Image de la carte" class="card-img">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">À la française</h3>
+                                <p class="card-subtitle">Cité Rouge</p>
+                            </div>
+                            <div class="card-like">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-solid fa-heart fa-xl"></i>
+                            </div>
                         </div>
-                        <div class="card-like">
-                            <i class="fa-solid fa-heart fa-xl"></i>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="assets/images/restaurants/Folie-Mericourt.jpg" alt="Image de la carte" class="card-img">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Le délice des sens</h3>
+                                <p class="card-subtitle">Folie-Méricourt</p>
+                            </div>
+                            <div class="card-like">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-solid fa-heart fa-xl"></i>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="card">
-                    <img src="assets/images/restaurants/Cite Rouge.jpg" alt="Image de la carte" class="card-img">
-                    <div class="card-content">
-                        <div class="card-txt">
-                            <h3 class="card-title">À la française</h3>
-                            <p class="card-subtitle">Cité Rouge</p>
-                        </div>
-                        <div class="card-like">
-                            <i class="fa-solid fa-heart fa-xl"></i>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card">
-                    <img src="assets/images/restaurants/Folie-Mericourt.jpg" alt="Image de la carte" class="card-img">
-                    <div class="card-content">
-                        <div class="card-txt">
-                            <h3 class="card-title">Le délice des sens</h3>
-                            <p class="card-subtitle">Folie-Méricourt</p>
-                        </div>
-                        <div class="card-like">
-                            <img src="assets/images/heart.png" alt="like">
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </section>
     </main>

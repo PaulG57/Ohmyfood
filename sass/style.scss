@@ -20,6 +20,8 @@ $third-color: #99E2D0;
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+@import "loader.scss";
+
 /******** Général ********/
 
 * {
@@ -100,13 +102,22 @@ nav {
   font-weight: 300;
 }
 
+@keyframes btn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.005);
+  }
+}
 .btn {
   @include btn();
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition: box-shadow 0.3s ease-in-out;
 }
 .btn:hover {
-  background-image: linear-gradient(to top left, lighten($primary-color, 5%), lighten($second-color, 5%));
+  animation: btn 0.2s ease-in-out forwards;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
 }
 
 /********** Fonctionnement **********/
@@ -197,9 +208,7 @@ nav {
   border-radius: 2px;
 }
 
-.card-like {
-  padding: 5px;
-}
+@import "like.scss";
 
 /********** Footer **********/
 
@@ -228,3 +237,25 @@ footer {
       }
     }
     }}
+
+    /******** Media Queries **********/
+
+    @media (min-width: 1024px) {
+      .container {
+        max-width: 1080px;
+        margin: auto;
+      }
+      .steps {
+        display: flex;
+        justify-content: space-between;
+      }
+      .restaurants {
+        .restaurants-cards {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .card {
+          
+        }
+      }
+    }

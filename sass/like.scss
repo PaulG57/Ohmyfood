@@ -1,0 +1,20 @@
+.card-like {
+    @include center();
+    padding: 5px;
+    .fa-heart {
+        padding: 10px;
+    }
+    .fa-regular {
+        position: relative;
+    }
+    .fa-solid {
+        position: absolute;
+        background: linear-gradient($primary-color, $second-color);
+        background-clip: text;
+        color: transparent;
+        display: none;
+    }
+    .fa-regular:hover + .fa-solid {
+        display: inline-block;
+    }
+  }
