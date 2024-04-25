@@ -1,0 +1,77 @@
+/******* Loader *******/
+
+/********** Reservez ***********/
+
+.up {
+  background: #fafafa;
+  padding: 0 20px 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title1 {
+  display: flex;
+  text-align: center;
+  padding-top: 30px;
+  h2 {
+    padding: 0 50px;
+    margin: 0;
+  }
+}
+
+.decouvrez {
+  display: flex;
+  text-align: center;
+  margin: 5px 0;
+  font-weight: 300;
+}
+
+/********** Fonctionnement **********/
+
+.fonctionnement{
+  padding: 20px;
+}
+
+.step {
+    @include center();
+    margin-bottom: 20px;
+  .number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -15px;
+    position: relative;
+    color: white;
+  }
+  .step-content {
+    @include center();
+    border-radius: 15px;
+    background-color: #F6F6F6;
+    padding: 5px 15px;
+    box-shadow: 0 5px 10px #c1c1c184;
+    i {
+      color: #7E7E7E;
+      margin: 0 25px 5px 25px;
+      font-size: 25px;
+    }
+    h4 {
+      width: 211px;
+    }
+  }
+}
+
+/********** Restaurants **********/
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 25px 15px 25px 15px;
+  .restaurants-cards{
+    @include center();
+    flex-direction: column;
+  }
+}

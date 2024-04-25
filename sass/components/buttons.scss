@@ -1,0 +1,17 @@
+@keyframes btn {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.005);
+    }
+  }
+  .btn {
+    @include btn();
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .btn:hover {
+    animation: btn 0.2s ease-in-out forwards;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+  }
