@@ -249,13 +249,18 @@ footer {
         display: flex;
         justify-content: space-between;
       }
+
       .restaurants {
-        .restaurants-cards {
+        .restaurants-cards{
           flex-direction: row;
           flex-wrap: wrap;
-        }
-        .card {
-          
+          justify-content: space-between;
+          .card {
+            width: 480px;
+            margin-bottom: 40px;
+          }
         }
       }
     }
+
+    

@@ -4,7 +4,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
-    animation: loader-animation 2s ease-in-out forwards;
+    animation: fadeout 2s forwards; 
     @include center();
   }
   
@@ -14,6 +14,7 @@
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    animation: loader-animation 2s infinite;
   }
   
   @keyframes loader-animation {
@@ -25,5 +26,13 @@
       display: none; 
     }
   }
+
+  @keyframes fadeout {
+    
+    100% {
+      display: none;
+    }
+  }
+
   
   
