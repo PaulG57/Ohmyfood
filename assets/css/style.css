@@ -101,6 +101,9 @@ a {
   width: 100%;
   height: 175px;
   object-fit: cover;
+  position: relative;
+  bottom: 25px;
+  overflow: visible;
 }
 .card .card-content {
   padding: 5px 10px 10px 10px;
@@ -108,6 +111,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .card .card-content .card-txt .card-title {
   margin: 5px;
@@ -205,7 +209,6 @@ footer .footer-links li i {
   margin-right: 10px;
 }
 
-/******* Loader *******/
 /********** Reservez ***********/
 .up {
   background: #fafafa;
@@ -283,6 +286,91 @@ footer .footer-links li i {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.resto-header .resto-nav {
+  display: flex;
+  align-items: center;
+}
+.resto-header .resto-nav .back-link {
+  margin-left: 20px;
+  position: absolute;
+}
+.resto-header .resto-nav .nav-title {
+  margin: 0 auto;
+}
+.resto-header .header-img {
+  width: 100%;
+  overflow: hidden;
+}
+.resto-header .header-img img {
+  width: 100%;
+  transform: scale(1.1);
+  transform-origin: top;
+}
+
+.menu {
+  background: #F6F6F6;
+  padding: 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  bottom: 30px;
+}
+.menu .menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .menu-header h1 {
+  font-weight: lighter;
+  font-size: 27px;
+  margin: 0;
+}
+.menu .menu-header .heart {
+  margin-right: 20px;
+}
+.menu .menu-body h3 {
+  font-weight: 300;
+  font-size: 15px;
+  position: relative;
+  padding-bottom: 8px;
+}
+.menu .menu-body h3::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #99E2D0;
+}
+.menu .menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dish {
+  background: white;
+  border-radius: 15px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.dish h4 {
+  font-size: large;
+}
+.dish .dish-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dish .dish-price {
+  font-weight: bolder;
+}
+
+.dish h4, .dish-content p {
+  margin: 0;
 }
 
 /******** Media Queries **********/
