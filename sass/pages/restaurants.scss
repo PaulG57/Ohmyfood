@@ -1,0 +1,82 @@
+.resto-header {
+    .resto-nav {
+        display: flex;
+        align-items: center;
+        .back-link {
+            margin-left: 20px;
+            position: absolute;
+        }
+        .nav-title {
+            margin: 0 auto;
+        }
+    }
+    .header-img {
+        width: 100%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transform: scale(1.1);
+            transform-origin: top;
+        }
+    }
+}
+
+.menu {
+    background: $background-color;
+    padding: 15px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    bottom: 30px;
+    .menu-header {
+        @include between();
+        h1 {
+            font-weight: lighter;
+            font-size: 27px;
+            margin: 0;
+        }
+        .heart {
+            margin-right: 20px;
+        }
+    }
+    .menu-body {
+        h3 {
+            font-weight: 300;
+            font-size: 15px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+        h3::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background: #99E2D0;
+    }
+    }
+    .menu-btn {
+        @include center();
+    }
+}
+
+.dish {
+    background: white;
+    border-radius: 15px;
+    padding: 12px;
+    margin-bottom: 10px;
+    h4 {
+        font-size: large;
+    }
+    .dish-content {
+        @include between();
+    }
+    .dish-price {
+        font-weight: bolder;
+    }
+}
+
+.dish h4, .dish-content p {
+    margin: 0;
+}
