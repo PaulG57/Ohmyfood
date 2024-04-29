@@ -315,12 +315,13 @@ footer .footer-links li i {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   position: relative;
-  bottom: 30px;
+  margin-top: -30px;
 }
 .menu .menu-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 20px 0;
 }
 .menu .menu-header h1 {
   font-weight: lighter;
@@ -329,6 +330,9 @@ footer .footer-links li i {
 }
 .menu .menu-header .heart {
   margin-right: 20px;
+}
+.menu .menu-body {
+  margin: 30px 0;
 }
 .menu .menu-body h3 {
   font-weight: 300;
@@ -349,6 +353,7 @@ footer .footer-links li i {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 40px 0 30px 0;
 }
 
 .dish {
@@ -364,6 +369,10 @@ footer .footer-links li i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.dish .dish-content p {
+  font-size: 0.94rem;
+  opacity: 0.9;
 }
 .dish .dish-price {
   font-weight: bolder;
