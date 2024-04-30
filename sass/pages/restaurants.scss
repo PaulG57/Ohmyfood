@@ -42,6 +42,7 @@
     }
     .menu-body {
         margin: 30px 0;
+        opacity: 0;
         h3 {
             font-weight: 300;
             font-size: 15px;
@@ -55,8 +56,9 @@
         height: 3px;
         bottom: 0;
         left: 0;
-        background: #99E2D0;
+        background: $light-green;
     }
+    
     }
     .menu-btn {
         @include center();
@@ -65,12 +67,18 @@
 }
 
 .dish {
+    height: 69px;
     background: white;
     border-radius: 15px;
-    padding: 12px;
     margin-bottom: 10px;
+    @include between();
+    overflow: hidden;
+    .dish-container {
+        width: 75%;
+        padding: 0 10px;
     h4 {
         font-size: large;
+    }
     }
     .dish-content {
         @include between();
@@ -78,12 +86,43 @@
             font-size: 0.94rem;
             opacity: 0.9;
         }
-    }
     .dish-price {
         font-weight: bolder;
+    }
+    }
+    .check {
+        height: 100%;
+        width: 59px;
+        background: $light-green;
+        color: white;
+        @include center();
     }
 }
 
 .dish h4, .dish-content p {
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.menu-body:nth-child(2) {
+    animation: fade-in 2s forwards 0.1s;
+}
+
+.menu-body:nth-child(3) {
+    animation: fade-in 2s forwards 0.5s;
+}
+
+.menu-body:nth-child(4) {
+    animation: fade-in 2s forwards 1s;
 }
