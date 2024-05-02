@@ -17,6 +17,7 @@
             width: 100%;
             transform: scale(1.1);
             transform-origin: top;
+            object-fit: cover;
         }
     }
 }
@@ -41,7 +42,7 @@
         }
     }
     .menu-body {
-        margin: 30px 0;
+        margin-bottom: 20px;
         opacity: 0;
         h3 {
             font-weight: 300;
@@ -74,7 +75,7 @@
     @include between();
     overflow: hidden;
     .dish-container {
-        width: 75%;
+        width: 100%;
         padding: 0 10px;
     h4 {
         font-size: large;
@@ -96,6 +97,28 @@
         background: $light-green;
         color: white;
         @include center();
+        transform: scaleX(0);
+        transform-origin: right;
+        display: none;
+    }
+
+    &:hover {
+        .check {
+            display: flex;
+        animation: check 0.5s forwards;
+        }
+        .dish-container {
+            width: 75%;
+        }
+    }
+}
+
+@keyframes check {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
     }
 }
 

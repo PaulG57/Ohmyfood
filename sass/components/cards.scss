@@ -14,22 +14,24 @@
         top: 15px;
         right: 15px;
         border-radius: 2px;
+        z-index: 2;
       }
     .card-img {
       width: 100%;
-      height: 175px;
+      height: 231px;
       object-fit: cover;
-      position: relative;
-      bottom: 25px;
-      overflow: visible;
+      position: absolute;
+      bottom: 29%;
+      left: 0;
+
     }
     .card-content {
         padding: 5px 10px 10px 10px;
         background-color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
+        @include between();
+        position: absolute;
+        width: 100%;
+        bottom: 0;
         .card-txt {
             .card-title {
                 margin: 5px;
