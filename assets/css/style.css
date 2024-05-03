@@ -308,6 +308,7 @@ footer .footer-links li i {
 }
 .resto-header .header-img img {
   width: 100%;
+  height: 275px;
   transform: scale(1.1);
   transform-origin: top;
   object-fit: cover;
@@ -407,7 +408,7 @@ footer .footer-links li i {
   animation: check 0.5s forwards;
 }
 .dish:hover .dish-container {
-  width: 75%;
+  width: 77%;
 }
 
 @keyframes check {
@@ -505,6 +506,9 @@ footer .footer-links li i {
   }
   .menu .menu-body {
     width: 60%;
+  }
+  .dish:hover .dish-container {
+    width: 88%;
   }
 }
 
