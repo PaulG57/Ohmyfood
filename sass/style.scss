@@ -52,11 +52,10 @@
       }
       .footer-links {
         ul {
-          display: flex;
-          div {
-            display: flex;
-            margin: 0 20px;
+          .link-space {
+            margin-right: 45px;
           }
+          display: flex;
           li {
             margin-right: 20px;
           }
@@ -74,7 +73,6 @@
             width: 100%;
             transform: scale(1);
             position: absolute;
-            bottom: -230px;
             }
         }
     }
