@@ -479,9 +479,8 @@ footer .footer-links li i {
   footer .footer-links ul {
     display: flex;
   }
-  footer .footer-links ul div {
-    display: flex;
-    margin: 0 20px;
+  footer .footer-links ul .link-space {
+    margin-right: 45px;
   }
   footer .footer-links ul li {
     margin-right: 20px;
