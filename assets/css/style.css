@@ -139,6 +139,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 5px;
+  margin-right: 10px;
 }
 .card-like .fa-heart {
   padding: 12px;
@@ -375,7 +376,7 @@ footer .footer-links li i {
 }
 .dish .dish-container {
   width: 100%;
-  padding: 0 10px;
+  padding: 0 12px;
 }
 .dish .dish-container h4 {
   font-size: large;
