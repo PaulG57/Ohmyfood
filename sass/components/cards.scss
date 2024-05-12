@@ -21,7 +21,7 @@
       height: 231px;
       object-fit: cover;
       position: absolute;
-      bottom: 29%;
+      bottom: 28%;
       left: 0;
 
     }
@@ -33,6 +33,7 @@
         width: 100%;
         bottom: 0;
         .card-txt {
+          flex: 1;
             .card-title {
                 margin: 5px;
             }
@@ -42,8 +43,3 @@
         }
     }
   }
-    
-  
-  
-  
-

@@ -70,65 +70,62 @@
 }
 
 .dish {
+    display: flex;
+    justify-content: space-between;
     height: 69px;
     background: white;
     border-radius: 15px;
     margin-bottom: 10px;
-    @include between();
     overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     .dish-container {
-        width: 100%;
-        padding: 0 12px;
-    h4 {
-        font-size: large;
-    }
-    }
-    .dish-content {
-        @include between();
-        p {
-            font-size: 0.94rem;
-            opacity: 0.9;
+       width: (var(--container-width));
+       display: flex;
+       align-items: end;
+       justify-content: space-between;
+       padding: 10px;
+       transition: width 0.3s ease-in-out;
+        .dish-content {
+            width: 88%;
+            h4, p {
+                margin: 0;
+                padding: 0 0 2px 0;
+                margin: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            h4 {
+                font-size: large;
+            }
+            p {
+                font-size: 0.94rem;
+                opacity: 0.9;
+            }
         }
-    .dish-price {
-        font-weight: bolder;
+        .dish-price {
+            font-weight: bolder;
+            margin: 5px;
     }
     }
     .check {
         height: 100%;
-        width: 59px;
+        width: (var(--check-width));
         background: $light-green;
         color: white;
         @include center();
-        transform: scaleX(0);
-        transform-origin: right;
-        display: none;
+        margin-right: calc(-1 * (var(--check-width)));
+        transition: margin-right 0.3s ease-in-out;
     }
 
     &:hover {
         .check {
-            display: flex;
-        animation: check 0.5s forwards;
+            margin-right: 0;
         }
         .dish-container {
-            width: 77%;
+            width: (var(--hover-width));
         }
     }
-}
-
-@keyframes check {
-    0% {
-        transform: scaleX(0);
-    }
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-.dish h4, .dish-content p {
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 @keyframes fade-in {

@@ -1,5 +1,22 @@
 $primary-color: #9356DC;
 $second-color: #FF79DA;
 $third-color: #99E2D0;
+
 $background-color: #F6F6F6;
+
 $light-green: #99E2D0;
+
+:root {
+    --check-width: 20%;
+    --container-width: 95%;
+    --hover-width: 78%;
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --check-width: 12%;
+        --container-width: 100%;
+        --hover-width: 88%;
+    }   
+ }
+
