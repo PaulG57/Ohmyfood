@@ -9,14 +9,14 @@ $light-green: #99E2D0;
 :root {
     --check-width: 20%;
     --container-width: 95%;
-    --hover-width: 78%;
+    --hover-width: 74%;
 }
 
 @media (min-width: 1024px) {
     :root {
-        --check-width: 12%;
+        --check-width: 11%;
         --container-width: 100%;
-        --hover-width: 88%;
+        --hover-width: 86%;
     }   
  }
 
