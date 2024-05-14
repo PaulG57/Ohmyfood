@@ -139,17 +139,6 @@ a {
   margin: 5px;
 }
 
-@keyframes like {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .card-like {
   display: flex;
   justify-content: center;
@@ -163,15 +152,16 @@ a {
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   color: transparent;
-  display: none;
+  transform: scale(0);
+  transition: all 0.2s;
+  position: absolute;
 }
 
 .card-like:hover .fa-regular {
-  display: none;
+  transform: scale(0);
 }
 .card-like:hover .fa-solid {
-  animation: like 1.5s forwards;
-  display: inline-block;
+  transform: scale(1);
 }
 
 .nav-title {

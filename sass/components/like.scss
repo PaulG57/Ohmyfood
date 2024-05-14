@@ -1,16 +1,4 @@
-@keyframes like {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-  .card-like {
+.card-like {
     @include center();
     margin-right: 15px;
     .fa-heart {
@@ -20,15 +8,16 @@
         background: linear-gradient($primary-color, $second-color);
         background-clip: text;
         color: transparent;
-        display: none;
+        transform: scale(0);
+        transition: all 0.2s;
+        position: absolute;
     }
 }
 .card-like:hover {
     .fa-regular {
-        display: none;
+        transform: scale(0);
     }
     .fa-solid {
-        animation: like 1.5s forwards;
-        display: inline-block;
+        transform: scale(1);
     }
 }
