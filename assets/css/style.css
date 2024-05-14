@@ -57,7 +57,6 @@ a {
   }
   100% {
     transform: rotate(360deg);
-    display: none;
   }
 }
 @keyframes fadeout {
@@ -221,6 +220,27 @@ footer .footer-links li i {
   margin-right: 10px;
 }
 
+/********* Media queries **********/
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-top: 35px;
+  }
+  footer .footer-title h4 {
+    margin: 0 25px 0 35px;
+  }
+  footer .footer-links ul {
+    display: flex;
+  }
+  footer .footer-links ul .link-space {
+    margin-right: 45px;
+  }
+  footer .footer-links ul li {
+    margin-right: 20px;
+  }
+}
 /********** Reservez ***********/
 .up {
   background: #fafafa;
@@ -300,6 +320,26 @@ footer .footer-links li i {
   flex-direction: column;
 }
 
+/******** Media queries **********/
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1080px;
+    margin: auto;
+  }
+  .steps {
+    display: flex;
+    justify-content: space-between;
+  }
+  .restaurants .restaurants-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurants .restaurants-cards .card {
+    width: 480px;
+    margin-bottom: 40px;
+  }
+}
 .resto-header .resto-nav {
   display: flex;
   align-items: center;
@@ -450,45 +490,8 @@ footer .footer-links li i {
   animation: fade-in 2s forwards 1s;
 }
 
-/******** Media Queries **********/
-/******** Home **********/
+/********* Media queries *********/
 @media (min-width: 1024px) {
-  .container {
-    max-width: 1080px;
-    margin: auto;
-  }
-  .steps {
-    display: flex;
-    justify-content: space-between;
-  }
-  .restaurants .restaurants-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .restaurants .restaurants-cards .card {
-    width: 480px;
-    margin-bottom: 40px;
-  }
-  footer {
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: baseline;
-    padding-top: 35px;
-  }
-  footer .footer-title h4 {
-    margin: 0 25px 0 35px;
-  }
-  footer .footer-links ul {
-    display: flex;
-  }
-  footer .footer-links ul .link-space {
-    margin-right: 45px;
-  }
-  footer .footer-links ul li {
-    margin-right: 20px;
-  }
-  /********** Restaurants **********/
   .resto-header .header-img {
     height: 383px;
     position: relative;

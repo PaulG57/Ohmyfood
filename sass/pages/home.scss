@@ -73,3 +73,30 @@
     flex-direction: column;
   }
 }
+
+/******** Media queries **********/
+
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1080px;
+    margin: auto;
+  }
+  .steps {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .restaurants {
+    .restaurants-cards{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .card {
+        width: 480px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  
+}

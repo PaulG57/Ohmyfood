@@ -23,3 +23,32 @@ footer {
         }
       }
       }}
+
+/********* Media queries **********/
+
+@media (min-width: 1024px) {
+
+  footer {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-top: 35px;
+    .footer-title {
+      h4 {
+        margin: 0 25px 0 35px;
+      }
+    }
+    .footer-links {
+      ul {
+        .link-space {
+          margin-right: 45px;
+        }
+        display: flex;
+        li {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  
+}
