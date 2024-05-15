@@ -61,10 +61,10 @@ a {
 }
 @keyframes fadeout {
   0% {
-    display: flex;
+    transform: scale(1);
   }
   100% {
-    display: none;
+    transform: scale(0);
   }
 }
 @keyframes btn {
