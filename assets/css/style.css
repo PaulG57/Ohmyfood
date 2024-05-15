@@ -95,7 +95,7 @@ a {
 }
 
 .card {
-  width: 340px;
+  width: 100%;
   height: 251px;
   border-radius: 20px;
   overflow: hidden;
@@ -298,6 +298,8 @@ footer .footer-links li i {
   background-color: #F6F6F6;
   padding: 5px 15px;
   box-shadow: 0 5px 10px rgba(193, 193, 193, 0.5176470588);
+  overflow: hidden;
+  white-space: nowrap;
 }
 .step .step-content i {
   color: #7E7E7E;
